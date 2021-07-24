@@ -1,63 +1,32 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title>Startpage</title>
-        <link href="CSS/startpage.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <script type="text/javascript" src="JS/script.js"></script>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <meta property="og:image" content="https://relate-av4mfw.s3.us-east-2.amazonaws.com/5ff1afe195a2726e658084c0/fb.png">
+        <link rel="icon" href="https://relate-av4mfw.s3.us-east-2.amazonaws.com/5f50ce0bc6791242bf12432c/favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://styles.relate.design/css/styles.css">
+        <link rel="stylesheet" href="https://rene.relate.design/css/styles.css">
+        <link rel="stylesheet" href="https://relate-icons.relate.design/css/styles.css">
+        <title>Bred</title>
     </head>
-	
-    <body onload="realTimeClock()" bgcolor="#2B2A33">
-        <div class="outer">
-            <div class="middle">
-                <div class="inner w3-animate-opacity">
-                    <div><p1 id="clock"></p1> <p1 id="ampm"></p1></div>
-                    <form id="form" role="search">
-                        <input type="search" id="query" name="q" placeholder=" ">
-                    </form>  
-                    <script>
-                        const f = document.getElementById('form');
-                        const q = document.getElementById('query');
-                        const search = 'https://www.google.com/search?d&q=';
-
-                        function submitted(event) {
-                            event.preventDefault();
-                            const url = search + q.value + '&ia=web';
-                        window.open(url, '_self');
-                        }
-
-                        f.addEventListener('submit', submitted);
-                    </script>
-                    <p></p>	
-                    <!--<p2> twitter | youtube | twitch </p2> -->
-                    <button class="button" id="reddit"><a target="_self"       style="text-decoration: none" href="https://www.reddit.com/r/FirefoxCSS/">reddit</a></button>
-                    <p2> | </p2>
-                    <button class="button" id="youtube"><a target="_self"      style="text-decoration: none" href="https://youtube.com">youtube</a></button>
-                    <p2> | </p2>
-                    <button class="button" id="twitter"><a target="_self"      style="text-decoration: none" href="https://twitter.com">twitter</a></button>
-                    <p2> | </p2>
-                    <button class="button" id="Mail"><a target="_self"         style="text-decoration: none" href="https://outlook.live.com/mail/0/inbox">mail</a></button>
-                    <p2> | </p2>
-                    <button class="button" id="Figma"><a target="_self"        style="text-decoration: none" href="https://www.figma.com/files/drafts?fuid=977242143333840125">figma</a></button>
+    <body>
+        <div class="box-size-view box-align-stretch background-tertiary bg-splash">
+            <div class="box-padding-xl box-size-page box-align-center">
+                <div class="box-direction-row box-align-center center box-gap-xl">
+                    <div class="box-padding-s box-align-center box-direction-row">
+                        <h1>
+                            <i>Bred</i>
+                        </h1>
+                        <h4>
+                            This is a blank page made for testing.
+                            <br/>
+                        </h4>
+                    </div>
                 </div>
-
-
-                <div class="inner w3-animate-opacity">
-                    <button class="button" id="Dribbble"><a target="_self"     style="text-decoration: none" href="https://dribbble.com/">dribbble</a></button>
-                    <p2> | </p2>
-                    <button class="button" id="Drive"><a target="_self"        style="text-decoration: none" href="https://onedrive.live.com/?id=root&cid=1CA20281D8CC0877">drive</a></button>
-                    <p2> | </p2>
-                    <button class="button" id="Soundcloud"><a target="_self"   style="text-decoration: none" href="https://soundcloud.com/discover">soundcloud</a></button>
-                    <p2> | </p2>
-                    <button class="button" id="Netflix"><a target="_self"      style="text-decoration: none" href="https://www.netflix.com/browse">netflix</a></button>
-                    <p2> | </p2>
-                    <button class="button" id="Netflix"><a target="_self"      style="text-decoration: none" href="https://discord.com/channels/@me">discord</a></button>
-                 </div>
-
-
             </div>
         </div>
-
     </body>
 </html>
