@@ -1,12 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=Hello, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>Bred</p>
-</body>
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Startpage</title>
+        <link href="CSS/startpage.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script type="text/javascript" src="JS/script.js"></script>
+    </head>
+	
+    <body onload="realTimeClock()" bgcolor="#2B2A33">
+        <div class="outer">
+            <div class="middle">
+                <div class="inner w3-animate-opacity">
+                    <div><p1 id="clock"></p1> <p1 id="ampm"></p1></div>
+                    <form id="form" role="search">
+                        <input type="search" id="query" name="q" placeholder=" ">
+                    </form>  
+                    <script>
+                        const f = document.getElementById('form');
+                        const q = document.getElementById('query');
+                        const search = 'https://www.google.com/search?d&q=';
+
+                        function submitted(event) {
+                            event.preventDefault();
+                            const url = search + q.value + '&ia=web';
+                        window.open(url, '_self');
+                        }
+
+                        f.addEventListener('submit', submitted);
+                    </script>
+                    <p></p>	
+                    <!--<p2> twitter | youtube | twitch </p2> -->
+                    <button class="button" id="reddit"><a target="_self"       style="text-decoration: none" href="https://www.reddit.com/r/FirefoxCSS/">reddit</a></button>
+                    <p2> | </p2>
+                    <button class="button" id="youtube"><a target="_self"      style="text-decoration: none" href="https://youtube.com">youtube</a></button>
+                    <p2> | </p2>
+                    <button class="button" id="twitter"><a target="_self"      style="text-decoration: none" href="https://twitter.com">twitter</a></button>
+                    <p2> | </p2>
+                    <button class="button" id="Mail"><a target="_self"         style="text-decoration: none" href="https://outlook.live.com/mail/0/inbox">mail</a></button>
+                    <p2> | </p2>
+                    <button class="button" id="Figma"><a target="_self"        style="text-decoration: none" href="https://www.figma.com/files/drafts?fuid=977242143333840125">figma</a></button>
+                </div>
+
+
+                <div class="inner w3-animate-opacity">
+                    <button class="button" id="Dribbble"><a target="_self"     style="text-decoration: none" href="https://dribbble.com/">dribbble</a></button>
+                    <p2> | </p2>
+                    <button class="button" id="Drive"><a target="_self"        style="text-decoration: none" href="https://onedrive.live.com/?id=root&cid=1CA20281D8CC0877">drive</a></button>
+                    <p2> | </p2>
+                    <button class="button" id="Soundcloud"><a target="_self"   style="text-decoration: none" href="https://soundcloud.com/discover">soundcloud</a></button>
+                    <p2> | </p2>
+                    <button class="button" id="Netflix"><a target="_self"      style="text-decoration: none" href="https://www.netflix.com/browse">netflix</a></button>
+                    <p2> | </p2>
+                    <button class="button" id="Netflix"><a target="_self"      style="text-decoration: none" href="https://discord.com/channels/@me">discord</a></button>
+                 </div>
+
+
+            </div>
+        </div>
+
+    </body>
 </html>
