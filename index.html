@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html class=" frowvatxi idc0_331"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Bred.wtf</title>
+<meta property="og:title" content="Bred">
+<meta name="description" content="Bred Bag · Am Bred">
+<meta property="og:description" content="Bred Bag · Am Bred">
+<meta property="og:image" content="https://cdx.solo.to/user/a/5fc0d00ceb4704_08607961.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="csrf-token" content="1kpg60vkt93iiHmy2YM6mU5Dy5lNrbTzEfG0Sobw">
+<meta name="theme-color" content="#C5B3FD">
+<link href="Other Images/Bred.png" rel="shortcut icon" type="image/x-icon">
+<link href="https://cdx.solo.to/images/logo/solo-webclip.png" rel="apple-touch-icon">
+<link href="Code/vendor.css" rel="stylesheet" type="text/css">
+<link href="Code/app.css" rel="stylesheet" type="text/css">
+<link href="Code/page.css" rel="stylesheet" type="text/css">
+<script src="Code/script.js" site="IHGLANPG" defer="defer"></script>
+<style type="text/css" id="custom-scrollbar-css">* {
+    scrollbar-width: thin !important;
+    scrollbar-color: #c5b3fdff #333333ff !important;
+}</style><script>(function addTranscript() {
+  function debounce(callback, wait, immediate = false) {
+    let timeout = null;
+    return function () {
+      const callNow = immediate && !timeout;
+      const next = () => callback.apply(this, arguments);
+      clearTimeout(timeout);
+      timeout = setTimeout(next, wait);
+      if (callNow) {
+        next();
+      }
+    };
+  }
+  function waitFor(selector, callback, timeout) {
+    const element = document.querySelector(selector);
+    if (element) {
+      callback(element);
+    } else {
+      if (timeout) {
+        return window.setTimeout(() => {
+          return window.requestAnimationFrame(() => {
+            waitFor(selector, callback);
+          });
+        }, timeout);
+      }
+      return window.requestAnimationFrame(() => {
+        waitFor(selector, callback);
+      });
+    }
+  }
+  function onVideoChange(cb) {
+    const debouncedCallback = debounce(cb, 200);
+    waitFor(
+      "ytd-player",
+      function handlePlayer(player) {
+        const video = document.querySelector(".html5-main-video");
+        if (!video) {
+          setTimeout(() => handlePlayer(player), 1000);
+          return;
+        }
+        debouncedCallback();
+        const observer = new MutationObserver(debouncedCallback);
+        observer.observe(video, {
+          childList: false,
+          subtree: false,
+          attributes: true,
+        });
+      },
+      100
+    );
+  }
+  function renderTranscript() {
+    const player = document.querySelector("ytd-player")?.getPlayer();
+    if (!player) {
+      return;
+    }
+    const { isLive, video_id } = player.getVideoData();
+    const options = player.getOptions();
+    const hasCaptions = options.includes("captions");
+    if (!hasCaptions || isLive) {
+      document.querySelector("#transcript-info")?.remove();
+      return;
+    }
+    document.querySelector("#transcript-info")?.remove();
+    const wrapper = document.createElement("div");
+    wrapper.id = `transcript-info`;
+    wrapper.style = `
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 8px;
+    `.replace("\n", " ");
+    const a = document.createElement("a");
+    a.setAttribute("href", `https://video-insights.com/en/video/${video_id}`);
+    a.setAttribute("target", "_blank");
+    a.setAttribute(
+      "style",
+      `
+        color: var(--yt-spec-call-to-action);
+        background-color: transparent;
+        text-transform: uppercase;
+        border: 1px solid var(--yt-spec-call-to-action);
+        padding: var(--yt-button-padding-minus-border);
+        width: var(--yt-paper-button-width, auto);
+        height: var(--yt-paper-button-height, auto);
+        border-radius: inherit;
+        text-align: center;
+        min-width: var(--yt-paper-button-min-width, var(--ytd-paper-button-min-width, 5.14em));
+        font-size: var(--yt-paper-button-font-size, inherit);
+        transition: var(--shadow-transition_-_transition);
+        margin: var(--yt-button-margin, 0 0.29em);
+        text-transform: uppercase;
+        vertical-align: middle;
+        white-space: nowrap;
+        font-size: var(--ytd-tab-system_-_font-size);
+        font-weight: var(--ytd-tab-system_-_font-weight);
+        letter-spacing: var(--ytd-tab-system_-_letter-spacing);
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: var(--yt-paper-button-min-width, var(--ytd-paper-button-min-width, 5.14em));
+        cursor: pointer;
+        -webkit-font-smoothing: var(--paper-font-common-base_-_-webkit-font-smoothing);
+      `.replace(/(\r\n|\n|\r|\s)/gm, "")
+    );
+    a.appendChild(document.createTextNode("Transcript "));
+    wrapper.appendChild(a);
+    const root = document.querySelector("ytd-video-owner-renderer");
+    root?.appendChild(wrapper);
+  }
+  onVideoChange(renderTranscript);
+})()</script></head>
+<body class="" data-new-gr-c-s-check-loaded="8.881.0" data-gr-ext-installed="">
+<div class="page-wrapper">
+	<div class="profile-bkg-hero-wrapper" style="background-image:none;background-color:#C5B3FD">
+		<div class="slice-div slice-div-large"></div>
+	</div>
+	<div class="section info-card">
+		<div class="section-container">
+			<div class="profile-info-wrapper">	
+				<div class="profile-info-top-wrapper">
+					<div class="profile-image-wrapper">
+						<img src="Other Images/Profile Picture.webp" class="profile-image">
+					</div>
+				</div>
+				<div class="profile-info-bottom-wrapper">
+					<div class="profile-name-wrapper">
+						<h1 class="profile-name">Bred</h1>
+					</div>
+					<div class="profile-location-box">
+						<img src="Other Images/map-pin.svg" alt="Location" class="location-icon">
+						<div class="profile-location-text">Bred Bag</div>
+					</div>
+					<p class="profile-bio">Am Bred</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section link-section">
+		<div class="section-container">
+			<div class="profile-link-wrapper">
+				<!---------------------------- Archive.org ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://archive.org/details/@soft-bred" id="MTU4NjYzOQ" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(80,80,80,0.65)">
+							<img src="Social Images/archive-org.svg" class="link-icon-float-image">
+						</div>
+						<div class="link-block-text-wrapper">
+							<div class="link-name">Archive.org</div>
+							<div class="link-url">Just saving sites.</div>
+						</div>
+						<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+						</div>
+					</a>
+				</div>
+			  	<!---------------------------- Behance ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://www.behance.net/Bred" id="MTU4NjYzOQ" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(5,62,255,0.65)">
+							<img src="Social Images/behance.svg" class="link-icon-float-image">
+						</div>
+						<div class="link-block-text-wrapper">
+							<div class="link-name">Behance</div>
+							<div class="link-url">Not much going on here.</div>
+						</div>
+						<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+						</div>
+					</a>
+				</div>
+				<!---------------------------- Clubhouse ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://www.clubhouse.com/Soft.Bred" id="Mjc3ODM5" class="link-button w-inline-block">
+					<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(170,170,170,0.65)">
+						<img src="Social Images/clubhouse.svg" class="link-icon-float-image">
+					</div>
+					<div class="link-block-text-wrapper">
+						<div class="link-name">Clubhouse</div>
+						<div class="link-url">Literally installed this just for the @</div>
+					</div>
+					<div class="link-arrow-wrapper">
+						<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+					</div>
+					</a>
+				</div>
+				<!---------------------------- DevieantArt ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://www.deviantart.com/softbred" id="Mjc3ODU4" class="link-button w-inline-block">
+					  	<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(93,200,90,0.65)">
+							<img src="Social Images/deviantart.svg" class="link-icon-float-image">
+					  	</div>
+					  	<div class="link-block-text-wrapper">
+							<div class="link-name">DeviantArt</div>
+					   		<div class="link-url">This is an odd one.</div>
+					  	</div>
+					  	<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+					  	</div>
+					</a>
+				</div>
+				<!---------------------------- Discord ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://discord.com/users/285526150678183938" id="MTU4ODYxNw" class="link-button w-inline-block">
+					<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(88,101,242,0.65)">
+						<img src="Social Images/discord.svg" class="link-icon-float-image">
+					</div>
+					<div class="link-block-text-wrapper">
+						<div class="link-name">Discord</div>
+						<div class="link-url">Add me on disord lol.</div>
+					</div>
+					<div class="link-arrow-wrapper">
+						<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+					</div>
+					</a>
+				</div>
+				<!---------------------------- Dribbble ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://dribbble.com/Bred_" id="Mjc3ODM3" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(234,76,137,0.65)">
+							<img src="Social Images/dribbble.svg" class="link-icon-float-image">
+						</div>
+						<div class="link-block-text-wrapper">
+							<div class="link-name">Dribbble</div>
+					   		<div class="link-url">No posts, but it exists.</div>
+					  	</div>
+					  	<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+					  	</div>
+					</a>
+			  	</div>				
+				<!---------------------------- Fandom ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://community.fandom.com/wiki/User:Soft.Bred" id="NjEwMzEy" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(8,215,215,0.65)">
+					<img src="Social Images/fandom.svg" class="link-icon-float-image">
+				</div>
+				<div class="link-block-text-wrapper">
+					<div class="link-name">Fandom</div>
+						<div class="link-url">Just to learn about my TV shows.</div>
+					</div>
+					<div class="link-arrow-wrapper">
+						<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+					</div>
+					</a>
+				</div>
+				<!---------------------------- Figma ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://www.figma.com/@Bred" id="NjEwMzEy" class="link-button w-inline-block">
+					<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(33,33,33,0.65)">
+						<img src="Social Images/figma.svg" class="link-icon-float-image">
+					</div>
+					<div class="link-block-text-wrapper">
+						<div class="link-name">Figma</div>
+						<div class="link-url">I spend most of my day here.</div>
+					</div>
+					<div class="link-arrow-wrapper">
+						<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+					</div>
+					</a>
+				</div>
+				<!---------------------------- Framer ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://www.framer.com/@bred/" id="NjEwMzEy" class="link-button w-inline-block">
+					<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(0,85,254,0.65)">
+						<img src="Social Images/framer.svg" class="link-icon-float-image">
+					</div>
+					<div class="link-block-text-wrapper">
+						<div class="link-name">Framer</div>
+						<div class="link-url">Animation tool I never leart how to use.</div>
+					</div>
+					<div class="link-arrow-wrapper">
+						<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+					</div>
+					</a>
+				</div>
+				<!---------------------------- Gamelib ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://gamelib.app/Bred" id="NjEwMzEy" class="link-button w-inline-block">
+					<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(199,170,81,0.65)">
+						<img src="Social Images/gamelib.svg" class="link-icon-float-image">
+					</div>
+					<div class="link-block-text-wrapper">
+						<div class="link-name">Gamelib</div>
+						<div class="link-url">Tracking games is cool.</div>
+					</div>
+					<div class="link-arrow-wrapper">
+						<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+					</div>
+					</a>
+				</div>
+				<!---------------------------- Gettr ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://www.gettr.com/user/bred_" id="Mjc3ODI1" class="link-button w-inline-block">
+					<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(204,0,0,0.65)">
+						<img src="Social Images/gettr.svg" class="link-icon-float-image">
+					</div>
+					<div class="link-block-text-wrapper">
+						<div class="link-name">GETTR</div>
+						<div class="link-url">I dont live in the US, but I still have this.</div>
+					</div>
+					<div class="link-arrow-wrapper">
+						<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+					</div>
+					</a>
+				</div>
+				<!---------------------------- Github ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://github.com/Soft-Bred" id="Mjc3ODI0" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(80,80,80,0.65)">
+							<img src="Social Images/github.svg" class="link-icon-float-image">
+						</div>
+							<div class="link-block-text-wrapper">
+							<div class="link-name">GitHub</div>
+						<div class="link-url">This place scares me, but I still use it.</div>
+						</div>
+						<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+						</div>
+					</a>
+				</div>
+				<!---------------------------- Gitlab ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://gitlab.com/Soft-Bred" id="Mjc3ODI0" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(48,53,62,0.65)">
+							<img src="Social Images/gitlab.svg" class="link-icon-float-image">
+						</div>
+							<div class="link-block-text-wrapper">
+							<div class="link-name">GitLab</div>
+						<div class="link-url">GitHub, but not.</div>
+						</div>
+						<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+						</div>
+					</a>
+				</div>
+				<!---------------------------- Gravatar ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://en.gravatar.com/softbred" id="Mjc3ODI0" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(29,79,196,0.65)">
+							<img src="Social Images/gravatar.svg" class="link-icon-float-image">
+						</div>
+							<div class="link-block-text-wrapper">
+							<div class="link-name">Gravatar</div>
+						<div class="link-url">Literally what is this.</div>
+						</div>
+						<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+						</div>
+					</a>
+				</div>
+				<!---------------------------- Guilded ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://www.guilded.gg/profile/Lmp9G89A" id="MTU4NzMxOA" class="link-button w-inline-block">
+					  	<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(204,165,0,0.65)">
+							<img src="Social Images/guilded.svg" class="link-icon-float-image">
+					 	</div>
+					 	<div class="link-block-text-wrapper">
+							<div class="link-name">Guilded</div>
+					   		<div class="link-url">Who even uses Guilded?</div>
+					  	</div>
+					  	<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+					  	</div>
+					</a>
+				</div>
+				<!---------------------------- Imgur ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://imgur.com/user/SoftBred" id="NjEwMzEy" class="link-button w-inline-block">
+					<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(133,191,37,0.65)">
+						<img src="Social Images/imgur.svg" class="link-icon-float-image">
+					</div>
+					<div class="link-block-text-wrapper">
+						<div class="link-name">Imgur</div>
+						<div class="link-url">Images go here.</div>
+					</div>
+					<div class="link-arrow-wrapper">
+						<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+					</div>
+					</a>
+				</div>
+				<!---------------------------- Instagram 1 ---------------------------->				
+				<div class="link-item-wrapper">
+					<a href="https://instagram.com/soft.bred?igshid=b5e7vneyrujq" id="Mjc3ODM5" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(202,109,120,0.65)">
+							<img src="Social Images/instagram.svg" class="link-icon-float-image">
+						</div>
+						<div class="link-block-text-wrapper">
+							<div class="link-name">Main Instagram (Memes)</div>
+							<div class="link-url">Mostly just memes.</div>
+						</div>
+						<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+						</div>
+					</a>
+				</div>
+				<!---------------------------- Instagram 2 ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://instagram.com/bred.but.photos?igshid=v0oeragrkwzw" id="Mjc3ODI0" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(202,109,120,0.65)">
+							<img src="Social Images/instagram.svg" class="link-icon-float-image">
+						</div>
+						<div class="link-block-text-wrapper">
+							<div class="link-name">Photography Account</div>
+							<div class="link-url">It's in the name... photography.</div>
+						</div>
+						<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+						</div>
+					</a>
+				</div>
+				<!---------------------------- Instagram 3 ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://instagram.com/bred.but.softer?igshid=qdiiq3lq1x8m" id="Mjc3ODI1" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(202,109,120,0.65)">
+							<img src="Social Images/instagram.svg" class="link-icon-float-image">
+						</div>
+						<div class="link-block-text-wrapper">
+							<div class="link-name">Bred Pics</div>
+							<div class="link-url">My private Instagram account.</div>
+						</div>
+						<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+						</div>
+					</a>
+				</div>
+				<!---------------------------- Ko-Fi ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://ko-fi.com/soft_bred" id="Mjc3ODM4" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(84,170,219,0.65)">
+							<img src="Social Images/ko-fi.svg" class="link-icon-float-image">
+						</div>
+						<div class="link-block-text-wrapper">
+							<div class="link-name">Ko-Fi</div>
+							<div class="link-url">Give me money pls.</div>
+						</div>
+						<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+						</div>
+					</a>
+				</div>
+				<!---------------------------- Medium ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://medium.com/@Bred." id="MTU4NjYzOQ" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(80,80,80,0.65)">
+							<img src="Social Images/medium.svg" class="link-icon-float-image">
+						</div>
+						<div class="link-block-text-wrapper">
+							<div class="link-name">Medium</div>
+							<div class="link-url">No posts, might be some later.</div>
+						</div>
+						<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+						</div>
+					</a>
+				</div>
+				<!---------------------------- Notify ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="http://notify.me/bred" id="NjEwMzEy" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(61, 97, 255, 0.65)">
+							<img src="Social Images/notify.svg" class="link-icon-float-image">
+						</div>
+						<div class="link-block-text-wrapper">
+							<div class="link-name">Notify</div>
+							<div class="link-url">Get notifed for the things I want you to see.</div>
+						</div>
+						<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+						</div>
+					</a>
+				</div>
+				<!---------------------------- Pinterest ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://www.pinterest.com/Soft_Bred/_saved/" id="NjEwMzEy" class="link-button w-inline-block">
+					<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(200,35,44,0.65)">
+						<img src="Social Images/pinterest.svg" class="link-icon-float-image">
+					</div>
+					<div class="link-block-text-wrapper">
+						<div class="link-name">Pinterest</div>
+					 <div class="link-url">I do tend to use this.</div>
+					</div>
+					<div class="link-arrow-wrapper">
+						<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+					</div>
+					</a>
+				</div>
+				<!---------------------------- Polywork ---------------------------->
+					<div class="link-item-wrapper">
+						<a href="https://www.polywork.com/bred" id="NjEwMzEy" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(88,43,232,0.65)">
+							<img src="Social Images/polywork.svg" class="link-icon-float-image">
+						</div>
+						<div class="link-block-text-wrapper">
+							<div class="link-name">Polywork</div>
+							<div class="link-url">LinkedIn but better.</div>
+						</div>
+						<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+						</div>
+						</a>
+					</div>
+				<!---------------------------- Reddit ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://www.reddit.com/user/Soft_Bred" id="Mjc3ODU4" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(255,67,1,0.65)">
+							<img src="Social Images/reddit.svg" class="link-icon-float-image">
+						</div>
+						<div class="link-block-text-wrapper">
+							<div class="link-name">Reddit</div>
+							<div class="link-url">Upvote my posts. Please.</div>
+						</div>
+						<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+						</div>
+					</a>
+				</div>
+				<!---------------------------- Roblox ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://www.roblox.com/users/1815596617/profile" id="MTU4ODgwNQ" class="link-button w-inline-block">
+					<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(180,180,180,0.65)">
+						<img src="Social Images/roblox.svg" class="link-icon-float-image">
+					</div>
+					<div class="link-block-text-wrapper">
+						<div class="link-name">Roblox</div>
+						<div class="link-url">I do play Roblox sometimes 😳</div>
+					</div>
+					<div class="link-arrow-wrapper">
+						<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+					</div>
+					</a>
+				</div>
+				<!---------------------------- Soundcloud ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://soundcloud.com/iz_nix" id="MTU4NjYwOQ" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(248,100,14,0.65)">
+							<img src="Social Images/soundcloud.svg" class="link-icon-float-image">
+						</div>	
+						<div class="link-block-text-wrapper">
+							<div class="link-name">SoundCloud</div>
+							<div class="link-url">No music, but you can follow me 👀</div>
+						</div>
+						<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+						</div>
+					</a>
+				</div>
+				<!---------------------------- Specturm ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://spectrum.chat/users/bred" id="MTU4NjYwOQ" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(118,22,252,0.65)">
+							<img src="Social Images/specturm.svg" class="link-icon-float-image">
+						</div>	
+						<div class="link-block-text-wrapper">
+							<div class="link-name">Specturn</div>
+							<div class="link-url">Just use this for Spicetify.</div>
+						</div>
+						<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+						</div>
+					</a>
+				</div>
+				<!---------------------------- Speedrun.com ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://www.speedrun.com/user/Soft_Bred" id="NjEwMzEy" class="link-button w-inline-block">
+					<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(255, 217, 92,0.65)">
+						<img src="Social Images/speedrun-com.svg" class="link-icon-float-image">
+					</div>
+					<div class="link-block-text-wrapper">
+						<div class="link-name">Speedrun.com</div>
+						<div class="link-url">I have never speedran anything ever.</div>
+					</div>
+					<div class="link-arrow-wrapper">
+						<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+					</div>
+					</a>
+				</div>
+				<!---------------------------- Spotify ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://open.spotify.com/user/jaceinu?si=0NeCDtG4TXWiUTKDvCGEdQ&amp;utm_source=copy-link&amp;nd=1" id="Mjc3ODM3" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(32,122,55,0.65)">
+							<img src="Social Images/spotify.svg" class="link-icon-float-image">
+						</div>
+						<div class="link-block-text-wrapper">
+							<div class="link-name">Spotify</div>
+							<div class="link-url">I dont post, but follow my playlists if you want</div>
+						</div>
+						<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+						</div>
+					</a>
+				</div>
+				<!---------------------------- Sub.so ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://sub.so/bred" id="NjEwMzEy" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(102, 82, 239,0.65)">
+							<img src="Social Images/sub-so.svg" class="link-icon-float-image">
+						</div>
+						<div class="link-block-text-wrapper">
+							<div class="link-name">Sub.so</div>
+							<div class="link-url">Notify... but worse.</div>
+						</div>
+						<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+						</div>
+					</a>
+				</div>
+				<!---------------------------- Tiktok ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://www.tiktok.com/@soft.bred" id="Mjc3ODM2" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(80,80,80,0.65)">
+							<img src="Social Images/tiktok.svg" class="link-icon-float-image">
+						</div>
+						<div class="link-block-text-wrapper">
+							<div class="link-name">TikTok</div>
+							<div class="link-url">Follow me for videos every 0 days!</div>
+						</div>
+						<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+						</div>
+					</a>
+				</div>
+				<!---------------------------- Tumblr ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://soft-bred.tumblr.com/" id="Mjc3ODI1" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(52,82,111,0.65)">
+					 		<img src="Social Images/tumblr.svg" class="link-icon-float-image">
+						</div>
+						<div class="link-block-text-wrapper">
+					 		<div class="link-name">Tumblr</div>
+							<div class="link-url">I never understood this site.</div>
+						</div>
+						<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+						</div>
+					</a>
+				</div>
+				<!---------------------------- Twitch ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://www.twitch.tv/soft_bred" id="Mjc3ODQy" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(145,70,255,0.65)">
+							<img src="Social Images/twitch.svg" class="link-icon-float-image">
+					  	</div>
+						<div class="link-block-text-wrapper">
+							<div class="link-name">Twitch</div>
+							<div class="link-url">I don't stream, but I might. No... no I won't</div>
+						</div>
+						<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+					 	</div>
+					</a>
+				</div>
+				<!---------------------------- Twitter ---------------------------->				
+				<div class="link-item-wrapper">
+					<a href="https://twitter.com/Soft_Bred" id="Mjc3ODQy" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(29,161,242,0.65)">
+							<img src="Social Images/twitter.svg" class="link-icon-float-image">
+						</div>
+						<div class="link-block-text-wrapper">
+							<div class="link-name">Twitter</div>
+							<div class="link-url">I tweet sometimes.</div>
+						</div>
+						<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+						</div>
+					</a>
+				</div>
+				<!---------------------------- Unsplash ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://unsplash.com/@soft_bred" id="MTU4NjYwOQ" class="link-button w-inline-block">
+					<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(80,80,80,0.65)">
+						<img src="Social Images/unsplash.svg" class="link-icon-float-image">
+					</div>
+					<div class="link-block-text-wrapper">
+						<div class="link-name">Unsplash</div>
+						<div class="link-url">Photos galore! None of them are mine tho.</div>
+					</div>
+					<div class="link-arrow-wrapper">
+						<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+					</div>
+					</a>
+				</div>
+				<!---------------------------- Vercel ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://vercel.com/soft-bred" id="Mjc3ODQy" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(80,80,80,0.65)">
+							<img src="Social Images/vercel.svg" class="link-icon-float-image">
+					  	</div>
+						<div class="link-block-text-wrapper">
+							<div class="link-name">Vercel</div>
+							<div class="link-url">Where this website is hosted!</div>
+						</div>
+						<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+					 	</div>
+					</a>
+				</div>
+				<!---------------------------- Vimeo ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://vimeo.com/softbred" id="MTM1NzA1NQ" class="link-button w-inline-block">
+					<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(26,183,234,0.65)">
+						<img src="Social Images/vimeo.svg" class="link-icon-float-image">
+					</div>
+					<div class="link-block-text-wrapper">
+						<div class="link-name">Vimeo</div>
+						<div class="link-url">Never use this either.</div>
+					</div>
+					<div class="link-arrow-wrapper">
+						<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+					</div>
+					</a>
+				</div>
+				<!---------------------------- VK ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://vk.com/softbred" id="Mjc3ODM2" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(40,134,244,0.65)">
+							<img src="Social Images/vk.svg" class="link-icon-float-image">
+					  	</div>
+					  	<div class="link-block-text-wrapper">
+							<div class="link-name">VK</div>
+					   		<div class="link-url">Where I steal my fonts.</div>
+					  	</div>
+					  	<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+					  	</div>
+					</a>
+				</div>
+				<!---------------------------- Youtube ---------------------------->
+				<div class="link-item-wrapper">
+					<a href="https://www.youtube.com/channel/UChzYvsHV9OMwoNXOEKfAmjw" id="MTM1NzA1NQ" class="link-button w-inline-block">
+						<div class="link-icon-float" style="box-shadow:0 8px 14px -4px rgba(196,48,43,0.65)">
+							<img src="Social Images/youtube.svg" class="link-icon-float-image">
+						</div>
+						<div class="link-block-text-wrapper">
+							<div class="link-name">Youtube</div>
+							<div class="link-url">No videos, but you can still subscribe.</div>
+						</div>
+						<div class="link-arrow-wrapper">
+							<img src="Other Images/link-button-arrow.svg" class="link-arrows">
+						</div>
+					</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<script src="Code/page.js"></script>
+<!--・。.・⁺· Bred ·⁺・。.・-->
