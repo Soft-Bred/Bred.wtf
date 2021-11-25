@@ -1,0 +1,25 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 760px;
+}
+
+.u-section-1 .u-text-1 {
+  font-family: SF-Mono-Medium;
+  width: 446px;
+  margin: 362px auto 0;
+}
+
+.u-section-1 .u-text-2 {
+  font-family: SF-Mono-Medium;
+  margin: 19px auto 60px;
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-text-1 {
+    width: 340px;
+  }
+}@font-face {
+  font-family: 'SF-Mono-Medium';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/SF-Mono-Medium.otf);
+}

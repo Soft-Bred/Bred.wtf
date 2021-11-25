@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+.u-clearfix:after,
+.u-clearfix:before {
+  content: "";
+  display: table;
+}
+
+.u-text-default {
+  display: table;
+  align-self: flex-start;
+}
+.u-custom-color-1,
+.u-body.u-custom-color-1,
+.u-container-style.u-custom-color-1:before,
+.u-container-layout.u-custom-color-1:before,
+.u-table-alt-custom-color-1 tr:nth-child(even) {
+  color: #ffffff;
+  background-color: #151515;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.875rem;
+  line-height: 1.2;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+h5 {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
